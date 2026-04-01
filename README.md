@@ -47,21 +47,21 @@
 ### 📚 大白模式  
 
 適合技術啟蒙與決策解釋，提供詳盡的比喻與具體的執行建議。
-![大白模式演示圖](docs/media/demo-big.png)
+![大白模式演示圖](https://raw.githubusercontent.com/miou1107/small-white/master/docs/media/demo-big.png)
 
 ---
 
 ### 📄 小白模式  
 
 適合開發衝刺期，只給懶人包核心重點，絕不廢話。
-![小白模式演示圖](docs/media/demo-small.png)
+![小白模式演示圖](https://raw.githubusercontent.com/miou1107/small-white/master/docs/media/demo-small.png)
 
 ---
 
 ### 🚫 關閉模式  
 
 恢復 AI 最專業、無任何修飾的純技術原文回覆。
-![關閉模式演示圖](docs/media/demo-off.png)
+![關閉模式演示圖](https://raw.githubusercontent.com/miou1107/small-white/master/docs/media/demo-off.png)
 
 ---
 
