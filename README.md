@@ -1,4 +1,4 @@
-# 🧚‍♂️ 小白工程師-AI講人話 (small-white) v3.2
+# 🧚‍♂️ 小白工程師-AI講人話 (small-white) v3.3.1
 
 將 AI 專業內容自動轉化成生活化表達。**全程自動化回覆補完，讓技術不再冷冰冰。**
 
@@ -51,24 +51,24 @@ chmod +x install.sh
 
 適合技術啟蒙與決策解釋，提供詳盡的比喻與具體的執行建議。
 
-![大白模式演示圖](/Users/vincentkao/.gemini/antigravity/scratch/small-white/docs/media/demo-big.png)
+![大白模式演示圖](docs/media/demo-big.png)
 <!-- slide -->
 ### 📄 小白模式 (Small White Mode)
 
-適合開發衝刺期，只給懶人包核心重點，絕不廢話。
+適合開發衝刺期，只給懶人包核心重點，絕人廢話。
 
-![小白模式演示圖](/Users/vincentkao/.gemini/antigravity/scratch/small-white/docs/media/demo-small.png)
+![小白模式演示圖](docs/media/demo-small.png)
 <!-- slide -->
 ### 🚫 關閉模式 (Off Mode)
 
 恢復 AI 最專業、無任何修飾的純技術原文回覆。
 
-![關閉模式演示圖](/Users/vincentkao/.gemini/antigravity/scratch/small-white/docs/media/demo-off.png)
+![關閉模式演示圖](docs/media/demo-off.png)
 ````
 
 ---
 
-## 🎯 輸出範例 (v3.2 跨工具格式)
+## 🎯 輸出範例 (v3.3.1 跨工具格式)
 
 **AI 原話**：
 > 「建議從 MySQL 去 INSERT 一段 status 紀錄，並確保使用了 Transaction 以維持數據一致性。」
@@ -78,9 +78,9 @@ chmod +x install.sh
 > 
 > 簡單來說，我們要到 **資料庫 (MySQL)** 去 **新增 (INSERT)** 一個「狀態紀錄」。
 > 
-> **具體比喻**：就像餐廳服務生幫客人「點新菜」。
+> **具體比喻**：就像你在 App 上點了「一碗牛肉麵並付了錢」。
 > 
-> **我的決策建議**：請務必開啟 **Transaction (交易機制)**，這就像確保你「付完錢」跟「拿到漢堡」這兩件事一定要同時發生，否則這單不算，這樣數據才不會亂掉。
+> **我的決策建議**：請務必開啟 **Transaction (交易機制)**。這就像確保你「口袋的錢扣掉 150 元」跟「廚房顯示有新訂單要煮」這兩件事必須同時成立。如果你付了錢但廚房沒跳單，你就只能餓肚子；如果廚房煮了但你沒付錢，老闆就虧大了。所以我們要用連動鎖死，保證這兩件事「同生共死」。
 
 *(提示：輸入 「/small-white 閉嘴」/「/small-white 小白」/「/small-white 大白」 可開關此說明)*
 
@@ -90,8 +90,7 @@ chmod +x install.sh
 
 ```text
 small-white/
-├── SKILL.md          # 小白工程師 Skill (v3.2)
-├── terms.json        # 術語庫
+├── SKILL.md          # 小白工程師 Skill (v3.3.1)
 ├── install.sh        # 自動安裝、同步與初始化
 ├── CHANGELOG.md      # 版本紀錄
 └── README.md         # 本文檔
