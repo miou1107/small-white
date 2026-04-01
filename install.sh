@@ -56,7 +56,6 @@ install_skill() {
         # 複製必要檔案
         cp "$SOURCE_DIR/README.md" "$dest_path/"
         cp "$SOURCE_DIR/SKILL.md" "$dest_path/"
-        cp "$SOURCE_DIR/terms.json" "$dest_path/"
         cp "$SOURCE_DIR/CHANGELOG.md" "$dest_path/"
         cp "$SOURCE_DIR/FILELIST.md" "$dest_path/"
         
