@@ -17,17 +17,8 @@
 
 ## 📥 安裝指引 (Quick Install)
 
-### 方法 A：全自動（推薦）
-直接複製以下內容到對話框：
+直接複製以下指令給你的 AI 助手（例如 Cursor, Trae, Roo 等）：
 > 「請從 `https://github.com/miou1107/small-white` clone 專案，並執行 `./install.sh`。成功後請回報！」
-
-### 方法 B：手動 CLI
-```bash
-git clone https://github.com/miou1107/small-white.git
-cd small-white
-chmod +x install.sh
-./install.sh
-```
 
 ---
 
