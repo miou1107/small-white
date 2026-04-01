@@ -147,9 +147,9 @@
     "term": "Authentication",
     "category": "security",
     "translations": {
-      "大白": "確認你是誰",
-      "小白": "身份驗證（登入確認你是誰）",
-      "範例": "就像進圖書館要出示借書證，證明你是會員"
+      "大白": "驗證身份",
+      "小白": "身份驗證（確認是誰）",
+      "範例": "就像驗證證件，確認是本人"
     }
   },
   "authorization": {
@@ -253,11 +253,11 @@
   },
   "token": {
     "term": "Token",
-    "category": "security",
+    "category": "ai",
     "translations": {
-      "大白": "出入證",
-      "小白": "Token（驗證身份的識別證）",
-      "範例": "就像停車場的代幣，投幣才能進出"
+      "大白": "文字碎片 / 計費單位",
+      "小白": "Token (AI 處理文字的最小單位)",
+      "範例": "就像把文章切成一塊塊的樂高，AI 是依據用了多少塊來收錢的"
     }
   },
   "session": {
@@ -638,15 +638,6 @@
       "範例": "就像書的目錄，讓你直接翻到想看的那一頁"
     }
   },
-  "authentication": {
-    "term": "Authentication",
-    "category": "security",
-    "translations": {
-      "大白": "驗證身份",
-      "小白": "身份驗證（確認是誰）",
-      "範例": "就像驗證證件，確認是本人"
-    }
-  },
   "oauth": {
     "term": "OAuth",
     "category": "security",
@@ -714,9 +705,9 @@
     "term": "Repository",
     "category": "version-control",
     "translations": {
-      "大白": "倉庫/存放處",
-      "小白": "Repository（程式碼存放處）",
-      "範例": "就像圖書館的藏書室，所有書都放在這裡"
+      "大白": "倉庫",
+      "小白": "Repository（程式碼庫）",
+      "範例": "就像圖書館，所有藏書都在這裡"
     }
   },
   "commit": {
@@ -800,13 +791,58 @@
       "範例": "就像每天早上大家站起來說一下昨天做了什麼、今天要做什麼"
     }
   },
-  "repository": {
-    "term": "Repository",
-    "category": "version-control",
+  "llm": {
+    "term": "LLM",
+    "category": "ai",
     "translations": {
-      "大白": "倉庫",
-      "小白": "Repository（程式碼庫）",
-      "範例": "就像圖書館，所有藏書都在這裡"
+      "大白": "超級大腦 / 萬事通",
+      "小白": "LLM (大型語言模型)",
+      "範例": "就像一個讀過全世界所有書的超級專家，你可以問他任何問題"
+    }
+  },
+  "prompt-engineering": {
+    "term": "Prompt Engineering",
+    "category": "ai",
+    "translations": {
+      "大白": "跟 AI 溝通的技術 / 下指令的藝術",
+      "小白": "提示工程 (優化給 AI 的指令)",
+      "範例": "就像教小朋友做事，指令下得越準確，他做得越好"
+    }
+  },
+  "rag": {
+    "term": "RAG",
+    "category": "ai",
+    "translations": {
+      "大白": "給 AI 翻書考 / 開放考卷",
+      "小白": "RAG (檢索增強生成，讓 AI 查資料再回答)",
+      "範例": "就像考試時准許翻書，AI 會先去你的文件夾找答案再回答你，比較不會亂講"
+    }
+  },
+  "fine-tuning": {
+    "term": "Fine-tuning",
+    "category": "ai",
+    "translations": {
+      "大白": "特訓 / 職業補習",
+      "小白": "微調 (針對特定領域加強模型能力)",
+      "範例": "就像讓一個通才醫生再去進修成為專業的牙醫，讓他更懂特定領域"
+    }
+  },
+  "hallucination": {
+    "term": "Hallucination",
+    "category": "ai",
+    "translations": {
+      "大白": "胡說八道 / 專業地扯謊",
+      "小白": "幻覺 (AI 產生錯誤但看似正確資訊的現象)",
+      "範例": "就像一個人太想表現，當不知道答案時就隨便編一個聽起來很專業的謊話"
+    }
+  },
+  "vector-database": {
+    "term": "Vector Database",
+    "category": "ai",
+    "translations": {
+      "大白": "語意圖書館 / 概念倉庫",
+      "小白": "向量資料庫 (儲存資料特徵以便快速檢索)",
+      "範例": "就像一個會把『貓』跟『虎』放在同一區的圖書館，因為它們概念很接近"
     }
   }
 }

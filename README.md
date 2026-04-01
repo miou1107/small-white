@@ -7,7 +7,7 @@
 ## ✨ 功能特色
 
 | 功能 | 說明 |
-|------|------|
+| :--- | :--- |
 | **三等級翻譯** | 大白工程師 / 小白工程師 / 正港工程師 |
 | **智能觀察** | AI 自動觀察用戶行為，自動調整翻譯等級 |
 | **評測系統** | 3 題選擇題，自動判定用戶等級 |
@@ -21,7 +21,7 @@
 **複製以下指令，貼到終端機執行即可：**
 
 ```bash
-curl -sL https://raw.githubusercontent.com/miou1107/tech-translator/main/install.sh | bash
+curl -sL https://raw.githubusercontent.com/miou1107/tech-translator/master/install.sh | bash
 ```
 
 腳本會自動檢測你安裝的 AI 工具並完成安裝！
@@ -31,13 +31,16 @@ curl -sL https://raw.githubusercontent.com/miou1107/tech-translator/main/install
 ### 常見問題
 
 **Q: 終端機是什麼？**
+
 > Mac: 打开「终端机」App
 > Windows: 打开「命令提示字元」或「PowerShell」
 
 **Q: 執行後顯示權限不足？**
+
 > 請先安裝 GitHub CLI：`brew install gh`（Mac）
 
 **Q: 安裝在哪個工具？**
+
 > 腳本會自動檢測你有安裝哪些 AI 工具（OpenCode、Codex、Claude Code、Cursor、Windsurf 等），然後自動安裝
 
 ---
@@ -47,7 +50,7 @@ curl -sL https://raw.githubusercontent.com/miou1107/tech-translator/main/install
 ### 指令列表
 
 | 指令 | 功能 |
-|------|------|
+| :--- | :--- |
 | `/翻譯` | 對當前對話內容進行白話翻譯 |
 | `/評測` | 手動觸發技術能力測驗 |
 | `/等級` | 查看當前翻譯等級 |
@@ -57,7 +60,7 @@ curl -sL https://raw.githubusercontent.com/miou1107/tech-translator/main/install
 ### 三等級說明
 
 | 等級 | 名稱 | 翻譯風格 | 適用對象 |
-|------|------|----------|----------|
+| :--- | :--- | :--- | :--- |
 | Lv.1 | 大白工程師 | 便利店/廚房比喻，詳細說明 | 完全不懂技術 |
 | Lv.5 | 小白工程師 | 懶人包極簡總結 | 有基礎概念 |
 | Lv.10 | 正港工程師 | 保持專業原文 | 技術強者 |
@@ -69,19 +72,21 @@ curl -sL https://raw.githubusercontent.com/miou1107/tech-translator/main/install
 ### 大白工程師翻譯
 
 **原文**：
+
 > 「建議使用 Redis 作為 Cache Layer，結合 LRU 淘汰策略來實現 Session Store。這樣可以減少 Database I/O，降低 Latency。考慮到未來 Scaling，建議用 Redis Cluster 做 Data Partitioning，同時配合 Pub/Sub 做 Event-Driven 的實時通知架構。你覺得這樣可以嗎？還是要用其他方案？」
 
 **翻譯後**：
+
 > 「我建議在系統裡加一個『暫存區』。想象便利店的臨時寄放櫃——常用的東西放這裡，不用每次都跑到後面倉庫翻找。
-> 
+>
 > 如果東西放滿了，就把最久沒用過的丟掉，騰出空間給新的。
-> 
+>
 > 這是放『誰登錄了』的資料，可以讓資料庫不用每次都重新加載這些資料，系統跑起來會更順。
-> 
+>
 > 以後如果資料變多了，可以多台機器分開放，再用類似 LINE 群組通知的功能，有人發消息時大家自動收到。
-> 
+>
 > → 我的建議：這樣做，因為彈性很好、容易變大，很適合你目前正在快速發展、用戶量一直增加的情境。
-> 
+>
 > 你覺得這個方向OK嗎？還是想用別的做法？」
 
 ---
@@ -89,13 +94,15 @@ curl -sL https://raw.githubusercontent.com/miou1107/tech-translator/main/install
 ### 小白工程師翻譯
 
 **原文**：
+
 > 同上
 
 **翻譯後**：
+
 > 「我建議這樣做：加一個暫存區（像便利店的寄放櫃），用來放『誰登錄了』的資料，這樣系統不用每次都去翻資料庫，會快很多。以後用戶變多的話，這套也可以輕鬆擴充。
-> 
+>
 > → 結論：彈性好、擴張性強，很適合你現在的階段。
-> 
+>
 > 你覺得可以嗎？」
 
 ---
@@ -103,13 +110,15 @@ curl -sL https://raw.githubusercontent.com/miou1107/tech-translator/main/install
 ### 正港工程師翻譯
 
 **原文**：
+
 > 同上
 
 **翻譯後**：
+
 > 「建議使用 Redis 作為 Cache Layer，結合 LRU 淘汰策略來實現 Session Store。這樣可以減少 Database I/O，降低 Latency。考慮到未來 Scaling，建議用 Redis Cluster 做 Data Partitioning，同時配合 Pub/Sub 做 Event-Driven 的實時通知架構。
-> 
+>
 > → 我的建議：這樣做，因為架構彈性好、擴張性強，很適合你目前的發展階段。
-> 
+>
 > 你覺得這樣可以嗎？還是想用別的做法？」
 
 ---
@@ -117,16 +126,18 @@ curl -sL https://raw.githubusercontent.com/miou1107/tech-translator/main/install
 ## 🔄 自動等級調整
 
 ### 降級觸發
+
 當 AI 觀察到你說了 2 次以上「聽不懂」「請說明」「不知道」等表述，會主動詢問是否要降級。
 
 ### 升級觸發
+
 當 AI 觀察到你使用專業術語、展現技術理解，會主動詢問是否要升級。
 
 ---
 
 ## 📊 評測題範例
 
-```
+```text
 嘿！想測試一下你的冒險等級嗎？來答三題看看你現在是什麼段位～
 
 Q1: 你有沒有聽過『API』？
@@ -152,11 +163,13 @@ Q3: 當有人說『快取』時，你會想到什麼？
 
 ## 📁 檔案結構
 
-```
+```text
 tech-translator/
 ├── SKILL.md          # Skill 本體
 ├── terms.json        # 術語庫（100+ 詞）
 ├── quiz.json         # 評測題庫（30 題）
+├── CHANGELOG.md      # 版本變更紀錄
+├── FILELIST.md       # 檔案清單
 └── README.md         # 本說明文件
 ```
 
@@ -164,7 +177,7 @@ tech-translator/
 
 ## 🛠 技術細節
 
-- **術語庫**：涵蓋前端、後端、資料庫、DevOps、資安、網路等領域
+- **術語庫**：涵蓋前端、後端、資料庫、DevOps、資安、網路、AI 等領域
 - **Hybrid 翻譯**：術語庫有的詞直接替換，沒有的詞 AI 即時生成解釋
 - **持久化**：`~/.tech-translator/profile.json` 儲存用戶設定
 
@@ -173,6 +186,7 @@ tech-translator/
 ## 🤝 貢獻
 
 歡迎提交 PR 擴充：
+
 - 術語庫（terms.json）
 - 評測題庫（quiz.json）
 - 翻譯範例
@@ -181,8 +195,8 @@ tech-translator/
 
 ## 📞 聯繫
 
-- GitHub: https://github.com/miou1107/tech-translator
-- Issues: https://github.com/miou1107/tech-translator/issues
+- GitHub: <https://github.com/miou1107/tech-translator>
+- Issues: <https://github.com/miou1107/tech-translator/issues>
 
 ---
 

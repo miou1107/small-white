@@ -4,7 +4,7 @@
 # 🧚‍♂️ 技術白話文翻譯 Skill - 自動安裝腳本
 # =====================================
 # 使用方式：把下面這行貼到終端機執行
-# curl -sL https://raw.githubusercontent.com/miou1107/tech-translator/main/install.sh | bash
+# curl -sL https://raw.githubusercontent.com/miou1107/tech-translator/master/install.sh | bash
 # =====================================
 
 set -e
