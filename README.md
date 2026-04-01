@@ -44,27 +44,25 @@ chmod +x install.sh
 
 ---
 
+---
+
 ## 🛡️ 模式演示 (User Interface Examples)
 
-````carousel
 ### 📚 大白模式 (Big White Mode)
-
 適合技術啟蒙與決策解釋，提供詳盡的比喻與具體的執行建議。
-
 ![大白模式演示圖](docs/media/demo-big.png)
-<!-- slide -->
+
+---
+
 ### 📄 小白模式 (Small White Mode)
-
-適合開發衝刺期，只給懶人包核心重點，絕人廢話。
-
+適合開發衝刺期，只給懶人包核心重點，絕不廢話。
 ![小白模式演示圖](docs/media/demo-small.png)
-<!-- slide -->
+
+---
+
 ### 🚫 關閉模式 (Off Mode)
-
 恢復 AI 最專業、無任何修飾的純技術原文回覆。
-
 ![關閉模式演示圖](docs/media/demo-off.png)
-````
 
 ---
 
