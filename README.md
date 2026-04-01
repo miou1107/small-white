@@ -15,11 +15,19 @@
 
 ---
 
-## 📥 安裝指引 (AI Agent Auto-Setup)
+## 📥 安裝指引 (Quick Install)
 
+### 方法 A：全自動（推薦）
 直接複製以下內容到對話框：
+> 「請從 `https://github.com/miou1107/small-white` clone 專案，並執行 `./install.sh`。成功後請回報！」
 
-> 「我想要安裝 `small-white` 專案。請檢查當前目錄，並執行 `./install.sh`。成功後請回報！」
+### 方法 B：手動 CLI
+```bash
+git clone https://github.com/miou1107/small-white.git
+cd small-white
+chmod +x install.sh
+./install.sh
+```
 
 ---
 
